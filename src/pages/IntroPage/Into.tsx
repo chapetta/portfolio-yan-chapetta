@@ -16,7 +16,7 @@ export function Intro() {
     }, 3000);
 
     const redirectTimer = setTimeout(() => {
-        navigate('/')
+        navigate('/home')
     }, 4000);
 
     return () => {
