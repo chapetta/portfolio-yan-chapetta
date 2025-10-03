@@ -1,5 +1,16 @@
-export const NomeComponente = () => {
+import { Routes, Route } from "react-router-dom";
+import { Layout } from "../components/Layout";
+import { Intro } from "../pages/IntroPage/Into";
+
+
+export const Router = () => {
     return (
-        <div>NomeComponente</div>
-    );
+    <Routes>
+      <Route path="/" element={ <Layout /> } >
+        <Route index element={ <Intro />} />
+      </Route>
+
+    </Routes>
+    
+    )
 };

@@ -1,11 +1,11 @@
-import { Intro } from "./pages/IntroPage/Into"
+import { Router } from "./routes"
 
 
 function App() {
 
   return (
     <>
-      <Intro />
+      <Router />
     </>
   )
 }
