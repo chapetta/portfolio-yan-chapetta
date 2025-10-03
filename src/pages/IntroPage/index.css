@@ -1,0 +1,91 @@
+.neon svg {
+          filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #0ff) drop-shadow(0 0 20px #0ff) drop-shadow(0 0 30px #0ff);
+          transition: filter 0.3s;
+        }
+        
+        .neon svg:hover {
+          filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #0ff) drop-shadow(0 0 40px #0ff) drop-shadow(0 0 60px #0ff);
+        }
+
+        @keyframes drop-in {
+          0% {
+            transform: translateY(-100px);
+            opacity: 0;
+          }
+          100% {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+
+        .drop-in {
+          animation: drop-in 0.5s ease-out forwards;
+          opacity: 0;
+        }
+
+        .drop-in:nth-child(1) {
+          animation-delay: 0s;
+        }
+        .drop-in:nth-child(2) {
+          animation-delay: 0.2s;
+        }
+        .drop-in:nth-child(3) {
+          animation-delay: 0.4s;
+        }
+        .drop-in:nth-child(4) {
+          animation-delay: 0.6s;
+        }
+        .drop-in:nth-child(5) {
+          animation-delay: 0.8s;
+        }
+
+        @keyframes side-in-left {
+          0% {
+            transform: translateX(-100px);
+            opacity: 0;
+          }
+          100% {
+            transform: translateX(0px);
+            opacity: 1;
+          }
+        }
+
+        .side-in-left {
+          animation: side-in-left 0.5s ease-out forwards;
+          animation-delay: 1s;
+          opacity: 0;
+        }
+
+        @keyframes up-from-bottom {
+          0% {
+            transform: translateY(50px);
+            opacity: 0;
+          }
+          100% {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+
+        .down-to-up {
+          animation: up-from-bottom 0.5s ease-out forwards;
+          animation-delay: 1.2s;
+          opacity: 0;
+        }
+
+        @keyframes exit-blur {
+          0% {
+            transform: scale(1);
+            filter: blur(0px);
+            opacity: 1;
+          }
+          100% {
+            transform: scale(0.8);
+            filter: blur(20px);
+            opacity: 0;
+          }
+        }
+
+        .exit-animation {
+          animation: exit-blur 1s ease-in-out forwards;
+        }
