@@ -1,10 +1,11 @@
+import { Intro } from "./pages/IntroPage/Into"
 
 
 function App() {
 
   return (
     <>
-      <h1>Portfolio</h1>
+      <Intro />
     </>
   )
 }
